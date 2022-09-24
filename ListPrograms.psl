@@ -6,8 +6,8 @@ Function ListPrograms
 	foreach($Name in $QueryPath)
 	{
     	(Get-ItemProperty -Path $RegPath$Name).DisplayName
-#        (Get-ItemProperty -Path $RegPath$Name).Publisher
-#        (Get-ItemProperty -Path $RegPath$Name).DisplayVersion
+        (Get-ItemProperty -Path $RegPath$Name).Publisher
+        (Get-ItemProperty -Path $RegPath$Name).DisplayVersion
 	}
 } 
 if ([IntPtr]::Size -eq 8)
